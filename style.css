@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/codioful-formerly-gradienta-OzfD79w8ptA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.tittle {
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+p {
+    font-weight: 200;
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    list-style: none;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 34px;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding-top: 300px;
+    align-items: center;
+}
+
+.header li:hover {
+    filter: brightness(70%);
+    cursor: pointer;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 82px;
+    align-items: center;
+    padding-top: 300px;
+}
+
+.arrow {
+    height: 100px;
+    width: 14px;
+    padding-left: 950px;
+    padding-top: 300px;
+    animation: infinite;
+}
+
+
+
+.imageText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 150px;
+    justify-content: center;
+}
+
+img {
+    border-radius: 12px;
+    width: 430px;
+}
+
+.text {
+    width: 700px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    align-items: center;
+    padding-top: 300px;
+}
+
+button {
+    display: flex;
+    background-color: #3039be;
+    padding: 16px 36px 16px 36px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    gap: 12px;
+    align-items: center;
+    
+}
+
+.buttonPng {
+    height: 24px;
+    width: 24px;
+}
+
+button a {
+    text-decoration: none;
+}
+
+button:hover {
+       border: 2.3px solid white;
+       background: none;
+}
+
+.projectsText {
+    display: flex;
+    gap: 400px;
+    align-items: center;
+}
+
+.cardsContainer {
+    display: flex;
+    gap: 100px;
+    font-size: 12px;
+    padding-bottom: 150px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 22px;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card img {
+    width: 279px;
+}
+
+.card img:hover {
+    filter: brightness(70%);
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    padding-top: 200px;
+    background-color: #080a27;
+    justify-content: center;
+    gap: 200px;
+    padding-bottom: 100px;
+}
+
+footer img {
+    height: 24px;
+    width: 24px;
+}
+
+.footerText {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.textsasa {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+}
+
+.logo p{
+    font-weight: bold;
+}
+
+.socialsIcons {
+    display: flex;
+    gap: 16px;
+}
+
+.socialsIcons img {
+    width: 42px;
+    height: 42px;
+    border-radius: 0px;
+}
+
+.socialsIcons img:hover {
+    filter: brightness(70%);
+    cursor: pointer;
+}
