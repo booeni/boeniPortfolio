@@ -9,33 +9,42 @@
 </head>
 <body>
     <section>
-<!--       <div class="header">
+       <div class="header">
+            <p class="navTittle">Booeni</p> 
             <ul>
-                <a><li>Home</li></a>
-                <a href=".about"><li>About</li></a>
-                <a href=""><li>Contact</li></a>
+                <a href="#home"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#projects"><li>Projects</li></a>
+                <a class="contatcButton" href="https://www.linkedin.com/in/gabrielboeni/" target="_blank"><button>Contact</button></a>
             </ul>
         </div>
--->
-        <div class="header-title">  
+
+        <div class="header-title"  id="home" >  
             <p class="tittle">Hello, I'm</p>
             <h1>Gabriel Boeni</h1>
             <p>Front end developer and UX/UI Designer</p>
-            <button><img src="images/Cloud.png" class="buttonPng"><a href="Profile.pdf" download="Curriculum">Curriculum</a></button>
+            <button><img src="images/Mail2.png" class="buttonPng"><a href="https://www.linkedin.com/in/gabrielboeni/" target="_blank">Contact me</a></button>
         </div>
         <!--<img src="icons/Arrow 1.png" class="arrow">   -->     
 
     </section>
 
-        <div class="about"> 
+        <div class="about" id="about"> 
             <h2>About me</h2>
                 <div class="imageText">
                     <img src="images/d12d3295cad41d1a793d36db240aab91.gif">
-                    <p class="text">I’m a graduated computer scientist who <strong>loves design and web development.</strong> <br><br> Currently at Carazinho/RS and Passo Fundo, I can <strong>work remote and in person.</strong> <br><br> Worked as a Web designer for about 8 months, where i started learning how to <strong>build websites for mobile and web,</strong> using the software figma. <br><br> Looking for jobs in <strong>Front End and UX/UI Design Junior.</strong></p> 
+                    <div class="textCv">
+                        <p>I’m a graduated computer scientist who <strong>loves design and web development.</strong> <br><br> Currently at Carazinho/RS and Passo Fundo, I can <strong>work remote and in person.</strong> <br><br> Worked as a Web designer for about 8 months, where i started learning how to <strong>build websites for mobile and web,</strong> using the software figma. <br><br> Looking for jobs in <strong>Front End and UX/UI Design Junior.</strong></p>
+                        <div class="cv">
+                            <h4>You can download <br> my CV here --> </h4>
+                            <button><img src="images/Cloud.png" class="buttonPng"><a href="Profile.pdf" download="Curriculum">Curriculum</a></button>
+                        </div>
+                    </div>
                 </div>
+                
         </div>
 
-        <div class="projects">
+        <div class="projects" id="projects">
             <div class="projectsText">
                 <h2>Projects</h2>
                 <button><a href="https://github.com/booeni" target="_blank">See all</a></button>
@@ -57,7 +66,7 @@
         </div>
 
         <footer>
-            <div class="logo">
+            <div class="logo" id="contact">
                 <p>Booeni</p>
             </div>
             <div class="textsasa">
@@ -82,6 +91,4 @@
         </footer>
 
 </body>
-
 </html>
-

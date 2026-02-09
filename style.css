@@ -5,6 +5,7 @@
     font-family: "Roboto Mono", monospace;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +17,11 @@ body {
 
 .tittle {
     text-align: center;
+}
+
+.navTittle {
+    font-size: 18px;
+    font-weight: 500;
 }
 
 h1 {
@@ -39,8 +45,20 @@ ul {
     font-size: 16px;
     align-items: center;
     justify-content: center;
-    padding-top: 34px;
 }
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #14195f;
+    padding: 22px;
+    justify-content: space-around;
+    position: fixed;
+    height: fit-content;
+    width: 100%;
+    align-items: center;
+}
+
 
 .header-title {
     display: flex;
@@ -60,7 +78,7 @@ ul {
     flex-direction: column;
     gap: 82px;
     align-items: center;
-    padding-top: 300px;
+    padding-top: 400px;
 }
 
 .arrow {
@@ -71,7 +89,23 @@ ul {
     animation: infinite;
 }
 
+h4 {
+    font-size: 18px;
+    font-weight: normal;
+}
 
+.textCv {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    width: 700px;
+}
+
+.cv {
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+}
 
 .imageText {
     display: flex;
@@ -86,10 +120,6 @@ img {
     width: 430px;
 }
 
-.text {
-    width: 700px;
-}
-
 .projects {
     display: flex;
     flex-direction: column;
@@ -101,13 +131,13 @@ img {
 button {
     display: flex;
     background-color: #3039be;
-    padding: 16px 36px 16px 36px;
+    padding: 16px 28px 16px 28px;
+    width: fit-content;
     font-size: 16px;
     border: none;
     border-radius: 4px;
     gap: 12px;
     align-items: center;
-    
 }
 
 .buttonPng {
@@ -115,13 +145,14 @@ button {
     width: 24px;
 }
 
-button a {
+a {
     text-decoration: none;
 }
 
 button:hover {
-       border: 2.3px solid white;
+       border: 1.5px solid white;
        background: none;
+       cursor: pointer;
 }
 
 .projectsText {
@@ -162,10 +193,11 @@ h3 {
 footer {
     display: flex;
     padding-top: 200px;
-    background-color: #080a27;
+    background-color: #010313;
     justify-content: center;
     gap: 200px;
     padding-bottom: 100px;
+    align-items: center;
 }
 
 footer img {
