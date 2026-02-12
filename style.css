@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     color: white;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Manrope", sans-serif;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -50,7 +53,7 @@ ul {
 .header {
     display: flex;
     flex-direction: row;
-    background-color: #14195f;
+    background-color: #101450;
     padding: 22px;
     justify-content: space-around;
     position: fixed;
@@ -63,7 +66,7 @@ ul {
 .header-title {
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    gap: 36px;
     padding-top: 300px;
     align-items: center;
 }
@@ -73,12 +76,26 @@ ul {
     cursor: pointer;
 }
 
+.webIcons {
+    display: flex;
+    gap: 26px;
+}
+
+.webIcons img {
+    width: 46px;
+    border-radius: 0px;
+}
+
+.arrow {
+    width: 100px;
+}
+
 .about {
     display: flex;
     flex-direction: column;
     gap: 82px;
     align-items: center;
-    padding-top: 400px;
+    padding-top: 00px;
 }
 
 .arrow {
@@ -163,7 +180,7 @@ button:hover {
 
 .cardsContainer {
     display: flex;
-    gap: 100px;
+    gap: 50px;
     font-size: 12px;
     padding-bottom: 150px;
 }
@@ -173,7 +190,24 @@ button:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border-radius: 12px;
     gap: 22px;
+    background-color: #303abe48;
+    padding: 0px 0px 20px 0px;
+}
+
+.cardTech {
+    display: flex;
+    gap: 18px;
+}
+
+.cardTech p {
+    border: 1px solid rgba(255, 255, 255, 0.351);
+    background-color: rgba(255, 255, 255, 0.086);
+    padding: 8px;
+    border-radius: 40px;
+    font-size: 10px;
+    font-weight: normal;
 }
 
 h3 {
@@ -182,7 +216,9 @@ h3 {
 }
 
 .card img {
-    width: 279px;
+    width: 280px;
+    height: 180px;
+    border-radius: 12px 12px 0px 0px;
 }
 
 .card img:hover {
@@ -192,7 +228,7 @@ h3 {
 
 footer {
     display: flex;
-    padding-top: 200px;
+    padding-top: 100px;
     background-color: #010313;
     justify-content: center;
     gap: 200px;
