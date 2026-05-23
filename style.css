@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -6,13 +6,13 @@ html {
 
 * {
     color: white;
-    font-family: "Manrope", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-image: url(images/codioful-formerly-gradienta-OzfD79w8ptA-unsplash.jpg);
+    background-color: #010313;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -53,15 +53,27 @@ ul {
 .header {
     display: flex;
     flex-direction: row;
-    background-color: #101450;
     padding: 22px;
     justify-content: space-around;
     position: fixed;
     height: fit-content;
     width: 100%;
+    min-width: 320px;
     align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.199);
 }
 
+.logo {
+    width: 48px;
+    height: 48px;
+}
+
+.logoGap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
 
 .header-title {
     display: flex;
@@ -74,6 +86,12 @@ ul {
 .header li:hover {
     filter: brightness(70%);
     cursor: pointer;
+}
+
+.butonsTittle {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
 }
 
 .webIcons {
@@ -152,7 +170,7 @@ button {
     width: fit-content;
     font-size: 16px;
     border: none;
-    border-radius: 4px;
+    border-radius: 100px;
     gap: 12px;
     align-items: center;
 }
@@ -164,6 +182,13 @@ button {
 
 a {
     text-decoration: none;
+}
+
+.btnHov:hover {
+    background-color: #3039be;
+    border-radius: 100px;
+    padding: 16px 28px 16px 28px;
+    transition: 0.2s ease;
 }
 
 button:hover {
@@ -180,7 +205,7 @@ button:hover {
 
 .cardsContainer {
     display: flex;
-    gap: 50px;
+    gap: 28px;
     font-size: 12px;
     padding-bottom: 150px;
 }
@@ -190,10 +215,10 @@ button:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-radius: 12px;
+    border-radius: 8px;
     gap: 22px;
-    background-color: #303abe48;
-    padding: 0px 0px 20px 0px;
+    background-color: #050925;
+    padding: 0px 0px 30px 0px;
 }
 
 .cardTech {
@@ -216,24 +241,29 @@ h3 {
 }
 
 .card img {
-    width: 280px;
+    width: 360px;
     height: 180px;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .card img:hover {
-    filter: brightness(70%);
+    filter: brightness(80%);
     cursor: pointer;
 }
 
 footer {
     display: flex;
-    padding-top: 100px;
+    padding-top: 50px;
     background-color: #010313;
-    justify-content: center;
+    justify-content: space-around;
     gap: 200px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.199);
+}
+
+footer p {
+    font-weight: 600;
 }
 
 footer img {
@@ -257,7 +287,7 @@ footer img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 26px;
+    gap: 24px;
 }
 
 .logo p{
@@ -266,12 +296,12 @@ footer img {
 
 .socialsIcons {
     display: flex;
-    gap: 16px;
+    gap: 24px;
 }
 
 .socialsIcons img {
-    width: 42px;
-    height: 42px;
+    width: 24px;
+    height: 24px;
     border-radius: 0px;
 }
 
